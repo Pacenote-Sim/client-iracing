@@ -77,16 +77,9 @@ make check          # format, build for this OS and for Windows, vet, lint, test
 make bench          # what a tick costs
 ```
 
-`TESTING.md` has what the suite asserts and what a tick costs. The decoder is tested on files this
-module writes itself in iRacing's layout, from the SDK's header, with the offsets asserted by hand;
-and, when `PACENOTE_IRACING_FIXTURE` names a real `.ibt`, on that file too, end to end through the
-source. It was checked that way against a Mazda MX-5 at Okayama: 272 variables, 47 329 ticks, 8
-laps, every one read. The live memory cannot be opened here; it is tested against a stand-in,
-cross-compiled for Windows in `make build`, and run on a machine with iRacing.
-
-A tick costs 1.1 µs and allocates nothing. iRacing publishes sixty a second and this code runs
-beside a game, so the session text — the circuit, the car, the sectors — is read when iRacing says
-it changed rather than on every tick.
+The decoder is tested on files this module writes itself in iRacing's layout, and on a real `.ibt`
+when `PACENOTE_IRACING_FIXTURE` names one. The live memory cannot be opened without iRacing, so it
+is tested against a stand-in and run on a machine that has the game. `TESTING.md` has the rest.
 
 ## Licence
 
