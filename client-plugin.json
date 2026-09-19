@@ -1,0 +1,7 @@
+{
+  "name": "iracing",
+  "kind": "source",
+  "title": "iRacing",
+  "description": "Reads iRacing while it runs, sixty times a second, from the memory it publishes. Plays one of its telemetry files on a machine without it.",
+  "interface_version": 1
+}
