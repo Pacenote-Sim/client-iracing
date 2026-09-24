@@ -83,7 +83,8 @@ is tested against a stand-in and run on a machine that has the game. `TESTING.md
 
 ## Licence
 
-GNU General Public License, version 3 — see `LICENSE`. The contract it is written against
-(`github.com/pacenote-sim/clientplugin`) is Apache-2.0, so a plugin of your own may be licensed
-however you like; a plugin compiled into the client, which is GPL-3, has to be GPL-compatible for
-that build to be distributed.
+GNU General Public License, version 3 — see `LICENSE` — with the Pacenote Plugin Exception in
+`LICENSE-EXCEPTION`, the same one the client carries. It lets this plugin be compiled into a client
+alongside plugins under other licences, including closed ones, and lets that client be handed out
+under those plugins' own terms while this plugin's part stays GPL. The contract it is built on
+(`github.com/pacenote-sim/clientplugin`) is Apache-2.0.
